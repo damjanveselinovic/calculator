@@ -21,6 +21,10 @@ function logObject(operator, resultBeforeCalc, calcNumber) {
 
 function calculateResult(operator) {
   const enteredNumber = parseInt(userInput.value);
+  if(!enteredNumber){
+    return;
+  }
+
   const initialResult = currentResult;
   let mathSign;
   if (operator == "ADD") {
